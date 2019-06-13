@@ -1,10 +1,10 @@
 const CONFIG = {
 	splashURL: 'https://www.adidas.com/yeezy',
 	//splashURL: 'http://w.www.adidas.de/hmac',
-	instances: 10,
+	instances: 15,
 	tabs: 0,
 	reload: true,
-	timeout: 20
+	timeout: 31
 };
 
 const USER_AGENTS = [
