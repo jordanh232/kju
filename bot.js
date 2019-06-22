@@ -10,7 +10,7 @@ const Logger = require('./logger');
 const { CONFIG, USER_AGENTS } = require('./config');
 const GOOGLE_COOKIES = require('./cookies');
 
-const splash = async (instance, config) => {
+const splash = async (instance, config, index) => {
 	const logger = new Logger();
 	try {
 		const tab = '00';
@@ -33,7 +33,8 @@ const splash = async (instance, config) => {
 				`--profile-directory=PROFILE_${instance}`,
 			]
 		});
-
+		
+		instanceArray["id"+index].browser = browser;
 		const [defaultPage] = await browser.pages();
 		await defaultPage.close();
 		
@@ -52,6 +53,8 @@ const splash = async (instance, config) => {
 		}
 		
 		const page = await browser.newPage();
+		instanceArray["id"+index].mypage = page;
+		console.log("here")
 		await cookiePage.close();
 		
 		page.setDefaultNavigationTimeout(60000);
@@ -78,7 +81,7 @@ const splash = async (instance, config) => {
 		// 	value: 'true',
 		// 	domain: 'www.adidas.de'
 		// });
-
+		instanceArray["id"+index].status="In Queue"
 		while (!(await page.evaluate(() => typeof grecaptcha !== 'undefined'))) {
 
 			logger.info(instance, tab, await page.evaluate(() => document.title));
@@ -116,7 +119,7 @@ const splash = async (instance, config) => {
 		await fs.outputFile(path.resolve(saveDir, 'body.png'), await page.screenshot());
 
 		logger.success(instance, tab, hmac.name, hmac.value, userAgent);
-
+		instanceArray["id"+index].status="Success"
 		notifier.notify({
 			title: '❯❯❯_ Kju',
 			//icon: path.resolve('media', 'icon.png'),

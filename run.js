@@ -14,16 +14,15 @@ const PORT=8080;
 
 const logger = new Logger();
 
-const run = async (num_windows) => {
+const run = async (runners) => {
 
 	await fs.emptyDir(path.resolve('tmp'));
-	logger.intro(num_windows);
-	
-	for (let i = 1; i <= num_windows; i++) {
-		await utils.timeout(1000);
-		bot.splash(i.pad(), CONFIG);
+	for (i = 0;  i<runners.length; i++){
+		await utils.timeout(2500);
+		instanceArray["id"+runners[i]].status="Started"
+		bot.splash(runners[i].pad(), CONFIG, runners[i]);
 	}
-
+	
 }
 
 module.exports = {
