@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 instanceArray = {}; 
 
 app.get('/', function(req, res) {
-    res.sendFile('/Users/jordanho/bot/kju/index.html');
+    res.sendFile('/index.html');
 });
 
 app.post('/create-windows', function (req, res) {
