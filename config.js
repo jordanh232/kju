@@ -2,6 +2,7 @@ const CONFIG = {
 	//splashURL: 'https://www.google.com',
 	splashURL: "https://www.adidas.com/yeezy/",
 	//splashURL: 'http://w.www.adidas.de/hmac',
+	ysURL: "https://yeezysupply.com/",
 	instances: 2,
 	tabs: 0,
 	reload: true,

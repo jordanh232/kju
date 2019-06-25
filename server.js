@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 65535
+const port = 80
 
 const path = require('path');
 const fs = require('fs-extra');

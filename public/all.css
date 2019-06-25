@@ -1,0 +1,359 @@
+@import url(https://mcansh.github.io/yeezy-logo-font/assets/css/font.css);
+body {
+  font-family: Yeezy;
+  font-weight: bold;
+  line-height: 1.42em;
+  color:#cab6b6;
+  background-color:#282a2f;
+}
+
+h1 {
+  font-family: Yeezy;
+  font-size:3em; 
+  font-weight: 800;
+  line-height:1.8em;
+  text-align: center;
+  color: #cab6b6;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.header{
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color:  #cab6b6;
+  margin: 0 auto 1em auto;
+  width: 40%;
+}
+
+h2 {
+  font-family: Yeezy;
+  font-size:2em; 
+  font-weight: 800;
+  line-height:1.8em;
+  text-align: center;
+  color: #cab6b6;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color:#cab6b6;
+}
+
+.dataTR td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+  -moz-box-shadow: 0 2px 2px -2px #0E1119;
+  box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.jTable {
+  text-align: left;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  display: table;
+  padding: 1em 0 1em 0;
+}
+
+.jTable td, .jTable th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.jTable tr:nth-child(odd) {
+  background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.jTable tr:nth-child(even) {
+  background-color: #2C3446;
+}
+
+th {
+  background-color: #383b42;
+}
+
+.jTable td:first-child { color: #ffffff; }
+
+.jTable th:first-child { color: #FB667A; }
+
+.jTable tr:hover {
+  background-color: #464A52;
+  -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+  -moz-box-shadow: 0 6px 6px -6px #0E1119;
+  box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.startButton {
+    background:url(/images/play-sign.png);
+    cursor:pointer;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: 100%;
+    border: none;
+}
+.startButton:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.removeButton {
+    background:url(/images/trash.png);
+    cursor:pointer;
+    width: 1.5em;
+    height: 1.48em;
+    background-size: 100%;
+    border: none;
+    margin: 1em;
+}
+
+.removeButton:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.viewButton {
+  background:url(/images/eye-open.png);
+  cursor:pointer;
+  width: 1.5em;
+  height: 1.5em;
+  background-size: 100%;
+  border: none;
+}
+
+.viewButton:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.all{
+}
+
+.allButton{
+  text-align: center;
+}
+
+.helpButton {
+  background:url(/images/icons8-help-208.png);
+  cursor:pointer;
+  width: 2.5em;
+  height: 2.5em;
+  background-size: 100%;
+  border: none;
+  padding: 0 0 0 0;
+}
+
+.helpButton:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.addButton {
+  background:url(/images/add-button-inside-black-circle.png);
+  cursor:pointer;
+  width: 2.5em;
+  height: 2.5em;
+  background-size: 100%;
+  border: none;
+}
+
+.addButton:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.start-all {
+  font-family: Yeezy;
+  font-weight: bold;
+  line-height: 1.42em;
+  font-size: 20px;
+  background-color: Transparent;
+  outline:none;
+  border-width: 2px;
+  border-radius: 12px;
+  border-color: #38d91d;
+  color: #38d91d;
+  width: 150px;
+  margin: 0 1.8em 0 .5em;
+}
+
+.start-all:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.remove-all {
+  font-family: Yeezy;
+  font-weight: bold;
+  line-height: 1.42em;
+  font-size: 20px;
+  background-color: Transparent;
+  outline:none;
+  border-width: 2px;
+  border-radius: 12px;
+  border-color: #FB667A;
+  color: #FB667A;
+  width: 150px;
+  margin: 0 .5em 0 0;
+}
+
+.remove-all:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #282a2f;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.window-button {
+  font-family: Yeezy;
+  font-weight: bold;
+  line-height: 1.42em;
+  color:#cab6b6;
+  font-size: 30px;
+  background-color: Transparent;
+  outline:none;
+  border: 2px;  
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+.window-button:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.cancelButton {
+  font-family: Yeezy;
+  font-weight: bold;
+  line-height: 1.42em;
+  color:#cab6b6;
+  font-size: 20px;
+  background-color: Transparent;
+  outline:none;
+  border: 2px;
+  text-align: center;
+}
+
+.cancelButton:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+input {
+  background-color: #ded5d5;
+}
+
+.modal-input{
+  width : 25%;
+  display: block;
+  text-align: center; 
+  background-color: #282a2f;
+  font-size:8em; 
+  border : none;
+  outline: none;
+  color:#cab6b6;
+  
+}
+
+.decrease{
+  background:url(/images/minus-sign-inside-a-black-circle.png);
+  cursor:pointer;
+  width: 3em;
+  height: 3em;
+  background-size: 100%;
+  border: none;
+  outline:none;
+}
+
+.decrease:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.increase{
+  background:url(/images/add-button-inside-black-circle.png);
+  cursor:pointer;
+  width: 3em;
+  height: 3em;
+  background-size: 100%;
+  border: none;
+  outline:none;
+}
+
+.increase:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.increase, .decrease, .modal-input{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mydiv{
+  text-align: center;
+}
+
+.buttondiv{
+  text-align: center;
+}
+
+.Stopped {
+  color:#FB667A;
+}
+
+.Started, .In {
+  color:#f4e30c;
+}
+
+.Success {
+  color:#38d91d;
+}
+
+
+.status {
+  margin: 0 .25em 0 0;
+}
+
+
+
+
